@@ -1,0 +1,53 @@
+<?!= include('_header_'); ?>
+
+<!--!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/additional-methods.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+  </head>
+  <body-->
+
+<div class="valign-wrapper row flash-card">
+  <div class="col s10 offset-s1">
+    <div id="body-card" class="card-panel darken-1 center" onclick="flip()">
+      <span class="white-text" id="content">
+        Hello there ! <br /><br />
+        Ready to start learning ? :))
+      </span>
+    </div>
+    <div class="">
+      <div class="valign-wrapper row flash-card">
+        <div class="col s6 button-div" onclick="loadWord('back')">
+          <div class="card-panel center white-text blue-grey darken-2">
+            BACK
+          </div>
+        </div>
+        <div class="col s6 button-div" onclick="loadWord('next')">
+          <div class="card-panel center white-text blue-grey darken-2">
+            NEXT
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<?!= include('main.js'); ?>
+<?!= include('_footer_'); ?>
+<!--/body>
+</html-->
